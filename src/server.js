@@ -28,6 +28,7 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/projects", require("./routes/projectRoutes"));
 app.use("/api/tasks", require("./routes/taskRoutes"));
 app.use("/api/todos", require("./routes/todoRoutes"));
+app.use("/api/stats", require("./routes/stats"));
 
 // Health check endpoint
 app.get("/api/health", (req, res) => {
